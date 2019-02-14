@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.min.js"></script>
+	<script src="index1.js"></script>
+
+</head>
+<body>
+	<span id='spanApp'>{{ showSpan }}</span>
+	<span id="spanDemo" v-bind:title="message">
+		鼠标悬停几秒钟查看此处动态绑定显示信息
+	</span>
+	<span id='testSpan'>{{ test }}</span>
+	<span id="displaySpan" v-if="display">{{ message }}</span>
+	<ol id="forSpan">
+		<li v-for="span in spans">{{ span }}<br /></li>
+	</ol>
+	<div id="btnDemo">
+		<button v-on:click="alertDemo">按钮</button>	 
+	</div>
+	<div id="modelDom">
+		<input type="text" v-model="textValue">
+		<span>{{ textValue }}</span>
+	</div>
+</body>
+</html>

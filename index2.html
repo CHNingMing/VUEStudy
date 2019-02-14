@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VUE模板	</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.min.js"></script>
+	<script src="index2.js"></script>
+</head>
+<body>
+	<div id="app">
+		<ol>
+			<optA v-for="item in items" v-bind:key="item" v-bind:todo="item"></optA>	
+		</ol>
+	</div>
+	<div id="app2">
+		<ming-geng v-for="item in items" v-bind:todo="item"></ming-geng>
+	</div>
+
+</body>
+</html>
